@@ -96,7 +96,7 @@ Vagrant.configure("2") do |config|
       sudo update-rc.d grafana-server defaults 95 10
       sudo service grafana-server start
       #Install Datadog agent
-      sudo DD_API_KEY=aa5696fb6493fee1501faf4738233ef4 DD_SITE="us3.datadoghq.com" DD_APM_INSTRUMENTATION_ENABLED=host DD_ENV=dev DD_APM_INSTRUMENTATION_LIBRARIES=java:1,python:3,js:5,php:1,dotnet:3,ruby:2 bash -c "$(curl -L https://install.datadoghq.com/scripts/install_script_agent7.sh)"
+      sudo DD_API_KEY=<YOUR KEY> DD_SITE="us3.datadoghq.com" DD_APM_INSTRUMENTATION_ENABLED=host DD_ENV=dev DD_APM_INSTRUMENTATION_LIBRARIES=java:1,python:3,js:5,php:1,dotnet:3,ruby:2 bash -c "$(curl -L https://install.datadoghq.com/scripts/install_script_agent7.sh)"
       #Run java app
       mkdir /opt/simple-api
       cd /opt/simple-api

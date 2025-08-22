@@ -9,3 +9,12 @@ Comando para executar o Vagrant:
 ```
 vagrant up
 ```
+Para conseguir adentrar no contexto da máquina virtual criada pelo Vagrant, utilize o comando:
+```
+vagrant ssh
+```
+Se quiser parar a máquina virtual, execute o comando:
+```
+vagrant halt
+```
+
